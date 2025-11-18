@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;1,100;1,300&display=swap");
+
+:root{
+    --primary: #ff0000;
+    --black:#000;
+    --white:#fff;
+    --light-black: #666;
+    --hover: rgba(255, 0, 0, 0.357);
+    --bg:#1c1c1c;
+    --border: 0.1rem solid rgba(0, 0, 0, 0.3);
+    --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+*{
+  font-family: 'Poppins', sans-serif;
+  margin: 0; padding: 0;
+  box-sizing: border-box;
+  outline: none; border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: .2s linear;
+}
+
+html{
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-padding-top: 9rem;
+  scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar{
+  width: .8rem;
+}
+
+html::-webkit-scrollbar-track{
+  background: transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+  background: var(--primary);
+  border-radius: 5rem;
+}
+
+section{
+  padding: 5rem 7%;
+}
+
+.heading{
+  text-align: center;
+  font-size: 4rem;
+  color: var(--white);
+  text-transform: uppercase;
+  font-weight: bolder;
+  margin-bottom: 3rem;
+}
+
+.heading span{
+  color: var(--primary);
+  text-transform: uppercase;
+}
+
+.btn{
+  display: inline-block;
+  margin-top: 1rem;
+  padding: .9rem 3rem;
+  border-radius: 10rem;
+  border: .1rem solid var(--primary);
+  font-size: 1.7rem;
+  color: var(--primary);
+  cursor: pointer;
+}
+
+.btn:hover{
+  background: var(--primary);
+  color: var(--white);
+}
+
+
+/* header */
+
+.header{
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 1000;
+  background: var(--black);
+  box-shadow: var(--box-shadow);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 9%;
+}
+
+
+.header .logo img{
+  color: var(--primary);
+  padding-right: .5rem;
+  max-width: 100px;
+}
+
+.header .navbar a{
+  font-size: 1.7rem;
+  color: var(--white);
+  margin: 0 1rem;
+  text-decoration: none;
+}
+
+.header .navbar a:hover{
+  color: var(--primary);
+}
+
+.header .icons div{
+  font-size: 2.5rem;
+  margin-left: 1.7rem;
+  color: var(--black);
+  cursor: pointer;
+  -webkit-text-stroke: .1rem var(--primary);
+}
+
+.header .icons div:hover{
+  color: var(--primary);
+}
+
+#menu-bar{
+  display: none;
+}
+
+/* header */
+
+/* home */
+
+.home{
+  min-height: 110vh;
+  display: flex;
+  background: url(../images/home.jpg) no-repeat;
+  background-size:cover;
+  background-position: center;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.home .content{
+  max-width: 60rem;
+  padding-top: 8rem;
+}
+
+.home .content h3{
+  font-size: 7rem;
+  color: var(--white);
+  line-height: 1.2;
+}
+
+.home .content .btn{
+  display: inline-block;
+  margin-top: 1rem;
+  padding: .9rem 3rem;
+  border-radius: 10rem;
+  border: .1rem solid var(--primary);
+  font-size: 1.7rem;
+  color: var(--primary);
+  cursor: pointer;
+
+}
+.home .content .btn:hover{
+  color: black;
+  background-color: var(--primary);
+}
+.home .content span{
+  color: var(--primary);
+}
+.home .content p{
+  font-size: 1.5rem;
+  padding: 1.3rem 0;
+  color: var(--white);
+  line-height: 2;
+}
+
+/* home */
