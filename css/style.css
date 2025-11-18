@@ -297,3 +297,155 @@ section{
   }
 
   /* deliver end  */
+
+
+  /* featured products */
+.featured {
+  background: var(--bg);
+  padding: 5rem 7%;
+}
+
+.featured .heading {
+  text-align: center;
+  font-size: 4rem;
+  color: var(--white);
+  text-transform: uppercase;
+  font-weight: bolder;
+  margin-bottom: 3rem;
+}
+
+.featured .heading span {
+  color: var(--primary);
+}
+
+
+.featured .swiper-slide .featured-card {
+  border-radius: .5rem;
+  overflow: hidden;
+  box-shadow: var(--box-shadow);
+  border: var(--border);
+  background: var(--black);
+}
+
+
+.featured .swiper-slide .featured-card .position-relative {
+  overflow: hidden;
+}
+
+.featured .swiper-slide .featured-card img {
+  width: 100%;
+  height: 45rem;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.featured .swiper-slide .featured-card:hover img {
+  transform: scale(1.1);
+}
+
+
+.featured .swiper-slide .featured-card .icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--hover);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: scale(0);
+  z-index: 1;
+  gap: .5rem;
+  transition: transform 0.3s ease;
+}
+
+.featured .swiper-slide .featured-card:hover .icons {
+  transform: scale(1);
+}
+
+.featured .swiper-slide .featured-card .icons a {
+  font-size: 2rem;
+  height: 5rem;
+  width: 5rem;
+  line-height: 5rem;
+  text-align: center;
+  background: var(--white);
+  color: var(--white);
+  -webkit-text-stroke: 0.1rem var(--primary);
+  border-radius: .5rem;
+  cursor: pointer;
+}
+
+.featured .swiper-slide .featured-card .icons a:hover {
+  color: var(--primary);
+}
+
+
+.featured .swiper-slide .featured-card .card-body {
+  text-align: center;
+  padding: 1rem 1.5rem;
+}
+
+.featured .swiper-slide .featured-card .card-title {
+  font-size: 2rem;
+  color: var(--white);
+  margin-bottom: .5rem;
+}
+
+.featured .swiper-slide .featured-card .price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .5rem;
+  padding: .5rem 0;
+}
+
+.featured .swiper-slide .featured-card .amount {
+  font-size: 2.2rem;
+  font-weight: bolder;
+  color: var(--primary);
+}
+
+.featured .swiper-slide .featured-card .cut {
+  text-decoration: line-through;
+  font-size: 1.5rem;
+  color: var(--light-black);
+}
+
+.featured .swiper-slide .featured-card .off {
+  color: red;
+  font-size: 2rem;
+}
+
+.featured .swiper-slide .featured-card .stars {
+  font-size: 1.7rem;
+}
+
+.featured .swiper-slide .featured-card .stars i {
+  color: gold;
+}
+
+
+.swiper-button-next,
+.swiper-button-prev {
+  height: 5rem;
+  width: 5rem;
+  border-radius: .5rem;
+  background: var(--white);
+  box-shadow: var(--box-shadow);
+  color: var(--primary);
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background: var(--primary);
+  color: var(--white);
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 2rem;
+}
+
+/* end */
