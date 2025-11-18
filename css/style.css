@@ -449,3 +449,14 @@ section{
 }
 
 /* end */
+
+/* brand */
+.brand{
+  background-color: var(--black);
+}
+
+.brand .brand-slider .slide{
+  text-align: center;
+}
+
+/* brand end */
