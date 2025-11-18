@@ -175,3 +175,56 @@ section{
 }
 
 /* home */
+
+/* banner */
+.banner{
+  background-color: var(--bg);
+}
+
+.banner .box{
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.banner .box img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.banner .box:hover img{
+  transform: scale(1.2);
+}
+
+.banner .content{
+  display: none;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 0; top: 0;
+  z-index: 10;
+  height: 100%;
+  width: 100%;
+  background: rgba(255, 0, 0, 0.369);
+}
+
+.banner .content h3{
+  font-size: 3rem;
+  color: var(--white);
+  text-transform: uppercase;
+}
+
+.banner .box:hover .content{
+  display: flex;
+}
+
+.banner-link{
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+
+/* banner end*/
