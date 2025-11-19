@@ -461,3 +461,85 @@ section{
 
 /* brand end */
 
+/* Blogs */
+.blogs {
+  background: var(--bg);
+  padding: 5rem 0; 
+}
+
+.blog-card {
+  background-color: var(--black)!important; 
+  color: var(--white)!important; 
+  border-radius: .5rem;
+  border: var(--border);
+  overflow: hidden; 
+  transition: transform 0.3s ease;
+}
+
+
+.blog-card img {
+  height: 25rem; 
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.blog-card:hover img {
+  transform: scale(1.2); 
+}
+
+.blog-card .card-body {
+  padding: 2rem 1.5rem; 
+  display: flex;
+  flex-direction: column;
+}
+
+.blog-card .card-title {
+  font-size: 2.2rem;
+  color: var(--white);
+  margin-bottom: 1rem;
+}
+
+.blog-card .card-text {
+  font-size: 1.4rem;
+  color: var(--light-black);
+  line-height: 2;
+  margin-bottom: 1rem;
+  flex-grow: 1; 
+}
+
+.blog-card .btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: .9rem 3rem;
+  border-radius: 10rem;
+  border: .1rem solid var(--primary);
+  font-size: 1.7rem;
+  color: var(--primary);
+  cursor: pointer;
+}
+
+.blog-card .btn:hover {
+  color: black;
+  background-color: var(--primary);
+}
+
+.blog-card .d-flex.justify-content-between {
+  font-size: 1.4rem;
+  color: var(--light-black);
+}
+
+.blog-card .d-flex.justify-content-between i {
+  color: var(--primary);
+  padding-right: .5rem;
+}
+
+.blog-card .d-flex.justify-content-between span {
+  color: var(--white) !important; 
+}
+
+
+.blog-card .d-flex.justify-content-between.mt-3 {
+  margin-top: 2.5rem;
+  padding-top: 2rem;
+  border-top: var(--border);
+}
