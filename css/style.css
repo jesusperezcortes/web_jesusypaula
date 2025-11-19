@@ -543,3 +543,101 @@ section{
   padding-top: 2rem;
   border-top: var(--border);
 }
+
+
+
+/* Contact */
+.contact {
+    background-color: var(--bg) !important;
+    padding: 5rem 0 !important;
+  }
+  
+  .contact .image img {
+    width: 100% !important;
+    height: auto !important;
+    display: block !important;
+  }
+  
+  .contact form {
+    padding: 2rem !important;
+    border: var(--border) !important;
+    box-shadow: var(--box-shadow) !important;
+    border-radius: .5rem !important;
+    background-color: var(--black) !important;
+  }
+  
+  .contact form h3 {
+    font-size: 3rem !important;
+    padding-bottom: 1rem !important;
+    color: var(--white) !important;
+  }
+  
+  .contact form input,
+  .contact form textarea,
+  .custom-input {
+    padding: 1rem 1.2rem !important;
+    border: var(--border) !important;
+    border-radius: .5rem !important;
+    font-size: 1.6rem !important;
+    color: var(--primary) !important;
+    margin-bottom: .7rem !important;
+    background-color: var(--bg) !important;
+  }
+  
+  .contact form input::placeholder,
+  .contact form textarea::placeholder,
+  .custom-input::placeholder {
+    color: var(--primary) !important;
+  }
+  
+  .contact form textarea,
+  .custom-input textarea {
+    height: 15rem !important;
+    resize: none !important;
+  }
+  
+  .contact form .btn,
+  .custom-btn {
+    background: none !important;
+    margin-top: 1rem !important;
+    padding: .9rem 3rem !important;
+    border-radius: 10rem !important;
+    border: .1rem solid var(--primary) !important;
+    font-size: 1.7rem !important;
+    color: var(--primary) !important;
+    cursor: pointer !important;
+  }
+  
+  .contact form .btn:hover,
+  .custom-btn:hover {
+    background: var(--primary) !important;
+    color: var(--black) !important;
+    transition: 0.2s !important;
+  }
+
+  /* contact end */
+
+
+
+  /* footer */
+
+.footer{
+    background: var(--black);
+  }
+  
+  .footer .credit{
+    margin-top: 2.5rem;
+    padding: 1rem;
+    padding-top: 2rem;
+    border-top: var(--border);
+    text-align: center;
+    color: var(--light-black);
+    font-size: 2rem;
+  }
+  
+  .footer .credit span{
+    color: var(--primary);
+  }
+  
+  /* footer end */
+  

@@ -1,3 +1,19 @@
+$('.fas.fa-heart').click(function() {
+    $(this).toggleClass('text-danger');
+
+    var myModal = new bootstrap.Modal(document.getElementById('favoriteModal'));
+    myModal.show();
+});
+
+
+$('#contactForm').submit(function(e){
+    e.preventDefault(); 
+    var modalEl = document.getElementById('successModal');
+    var modal = new bootstrap.Modal(modalEl);
+    modal.show();
+    $(this).trigger('reset'); 
+});
+
 
 var swiperFeatured = new Swiper(".featured-slider", {
     loop: true,
