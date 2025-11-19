@@ -14,6 +14,15 @@ $('#contactForm').submit(function(e){
     $(this).trigger('reset'); 
 });
 
+$('#menu-bar').click(function(){
+    $('.navbar').toggleClass('active');
+});
+
+   
+$(window).scroll(function(){
+     $('.navbar').removeClass('active');
+});
+
 
 var swiperFeatured = new Swiper(".featured-slider", {
     loop: true,
