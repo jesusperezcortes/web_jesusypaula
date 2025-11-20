@@ -284,6 +284,68 @@ hr {
 }
 
 
+
+  /* ===== MODAL CARRITO ===== */
+
+
+.custom-cart-modal {
+  background: var(--bg);
+  color: var(--white);
+  border-radius: 10px;
+  border: 1px solid var(--primary);
+}
+
+.custom-cart-header {
+  border-bottom: 1px solid var(--primary);
+}
+
+.custom-close {
+  filter: invert(1);
+}
+
+.custom-cart-body {
+  padding: 20px;
+}
+
+.empty-text {
+  color: var(--light-black);
+}
+
+.custom-cart-footer {
+  border-top: 1px solid var(--primary);
+  display: flex;
+  justify-content: space-between;
+}
+
+.custom-btn-outline {
+  padding: 8px 20px;
+  border: 1px solid var(--primary);
+  background: transparent;
+  border-radius: 8px;
+  color: var(--primary);
+}
+
+.custom-btn-outline:hover {
+  background: var(--primary);
+  color: var(--white);
+}
+
+.custom-btn-primary {
+  padding: 8px 20px;
+  border-radius: 8px;
+  background: var(--primary);
+  color: white;
+  border: none;
+}
+
+.custom-btn-primary:hover {
+  background: var(--white);
+  color: var(--primary);
+}
+
+
+
+
 /* footer */
 
 .footer{
