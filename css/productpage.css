@@ -393,6 +393,10 @@ hr {
 
 @media (max-width: 768px){
 
+  body {
+    padding: 0;
+  }
+
   #menu-bar{
     display: inline-block;
   }
@@ -422,6 +426,7 @@ hr {
     font-size: 4.5rem;
   }
 
+
 }
 
 @media (max-width: 450px){
@@ -442,7 +447,7 @@ hr {
     flex-direction: column;
   }
   .small-Card img{
-    width: 80px;
+    width: 77px;
   }
   .product-info{
     width: 100%;
