@@ -78,6 +78,26 @@ section{
 }
 
 
+body {
+  background-color: var(--bg) !important;
+}
+
+
+button, .btn {
+  background: var(--primary) !important;
+  color: white !important;
+  border: none !important;
+  border-radius: 4px !important;
+  padding: 10px 37px !important;
+  cursor: pointer !important;
+}
+
+button:hover, .btn:hover {
+  background: var(--black) !important;
+  border: 1px solid var(--primary) !important;
+  color: var(--primary) !important;
+}
+
 /* header */
 
 .header{
@@ -125,3 +145,165 @@ section{
 #menu-bar{
   display: none;
 }
+
+/* end */
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 30px;
+  background-color: var(--bg);
+}
+
+header {
+  margin-bottom: 20px;
+}
+
+.product-container {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  gap: 40px;
+}
+
+
+
+.img-card img {
+  width: 100%;
+  flex-shrink: 0;
+  border-radius: 4px;
+  height: 520px;
+  object-fit: cover;
+}
+
+.small-Card {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-top: 15px;
+  gap: 12px;
+}
+
+.small-Card img {
+  width: 104px;
+  height: 104px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.small-Card img:active {
+  border: 1px solid var(--primary);
+}
+
+.sm-card {
+  border: 2px solid var(--primary);
+}
+
+.product-info{
+  width: 60%;
+}
+.product-info h3 {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 130%;
+  color: var(--white);
+}
+
+.product-info h5 {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 130%;
+  color: var(--primary);
+  margin: 6px 0;
+}
+
+.product-info del {
+  color: #a9a9a9;
+}
+
+.product-info p {
+  color: var(--white);
+  margin: 15px 0;
+  width: 70%;
+}
+
+.sizes p {
+  font-size: 32px;
+  color: var(--white);
+}
+
+.size-option {
+  width: 200px;
+  height: 30px;
+  margin-bottom: 15px;
+  padding: 5px;
+}
+
+.quantity input {
+  width: 51px;
+  height: 33px;
+  margin-bottom: 15px;
+  padding: 6px;
+}
+
+button {
+  background: var(--primary);
+  border-radius: 4px;
+  padding: 10px 37px;
+  border: none;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+button:hover {
+  background: var(--black);
+  transition: 0.1s;
+  border: solid var(--primary);
+  color: var(--primary);
+}
+
+
+hr {
+  color: #0040ff;
+  width: 58%;
+  opacity: 0.67;
+}
+
+.pagination {
+  padding-top: 7rem;
+    color: #787a80;
+    margin: 15px 0;
+    cursor: pointer;
+}
+
+
+/* footer */
+
+.footer{
+  background: var(--bg);
+
+}
+
+.footer .credit{
+  margin-top: 2.5rem;
+  padding: 1rem;
+  padding-top: 2rem;
+  text-align: center;
+  color: var(--light-black);
+  font-size: 2rem;
+}
+
+.footer .credit span{
+  color: var(--primary);
+}
+
+/* end */
+
+
