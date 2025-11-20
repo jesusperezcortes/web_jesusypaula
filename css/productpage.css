@@ -155,7 +155,7 @@ button:hover, .btn:hover {
   padding: 0;
 }
 body {
-  max-width: 1280px;
+  max-width: 1600px;
   margin: 0 auto;
   padding: 0 30px;
   background-color: var(--bg);
@@ -169,7 +169,7 @@ header {
   display: flex;
   justify-content: start;
   align-items: start;
-  gap: 40px;
+  gap: 100px;
 }
 
 
@@ -206,10 +206,10 @@ header {
 }
 
 .product-info{
-  width: 60%;
+  width: 100%;
 }
 .product-info h3 {
-  font-size: 32px;
+  font-size: 45px;
   font-weight: 600;
   line-height: 130%;
   color: var(--white);
@@ -230,7 +230,9 @@ header {
 .product-info p {
   color: var(--white);
   margin: 15px 0;
-  width: 70%;
+  width: 100%;
+  font-size: 1.2rem;
+  
 }
 
 .sizes p {
@@ -246,7 +248,7 @@ header {
 }
 
 .quantity input {
-  width: 51px;
+  width: 45px;
   height: 33px;
   margin-bottom: 15px;
   padding: 6px;
@@ -369,3 +371,86 @@ hr {
 /* end */
 
 
+
+
+ /* media queries */
+
+ @media (max-width: 991px){
+
+  html{
+    font-size: 55%;
+  }
+
+  .header{
+    padding: 2rem 3rem;
+  }
+
+  section{
+    padding: 2rem;
+  }
+
+}
+
+@media (max-width: 768px){
+
+  #menu-bar{
+    display: inline-block;
+  }
+
+  .header .navbar{
+    position: absolute;
+    top: 99%;
+    left: 0; right: 0;
+    background: var(--black);
+    border-top: var(--border);
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+
+  .header .navbar.active{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+
+  .header .navbar a{
+    font-size:  2rem;
+    margin: 2rem;
+    display: block;
+  }
+
+  .home .content h3{
+    font-size: 4.5rem;
+  }
+
+}
+
+@media (max-width: 450px){
+
+  html{
+    font-size: 50%;
+  }
+
+  .home .content h3{
+    font-size: 3.5rem;
+  }
+
+}
+
+
+@media screen and (max-width: 576px) {
+  .product-container{
+    flex-direction: column;
+  }
+  .small-Card img{
+    width: 80px;
+  }
+  .product-info{
+    width: 100%;
+  }
+
+  .delivery{
+    width: 100%;
+  }
+
+  hr{
+    width: 100%;
+  }
+}
