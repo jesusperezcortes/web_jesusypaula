@@ -404,6 +404,8 @@ hr {
     background: var(--black);
     border-top: var(--border);
     clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    display: flex;
+    flex-direction: column;
   }
 
   .header .navbar.active{
@@ -412,7 +414,7 @@ hr {
 
   .header .navbar a{
     font-size:  2rem;
-    margin: 2rem;
+    margin: 1rem;
     display: block;
   }
 
